@@ -81,6 +81,7 @@ const ContactWrap = styled.section`
                 }
             }
             #Appear02 {
+                top: 72px !important;
                 left: 16px !important;
             }
             #Appear03 {
@@ -160,7 +161,7 @@ const ContactWrap = styled.section`
 
         #Appear02 {
             position: absolute;
-            top: 72px;
+            top: 96px;
             left: 40px;
             transition: all 0.4s ease-in-out;
             transform: scale(0);

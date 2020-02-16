@@ -167,16 +167,21 @@ export default class App extends React.Component {
                                             render={props => (
                                                 <Home {...props} />
                                             )}
-                                            style={{ position: "absolute" }}
                                         />
                                         <Route
-                                            path="/about"
+                                            path={
+                                                process.env.PUBLIC_URL +
+                                                "/about"
+                                            }
                                             render={props => (
                                                 <About {...props} />
                                             )}
                                         />
                                         <Route
-                                            path="/contact"
+                                            path={
+                                                process.env.PUBLIC_URL +
+                                                "/contact"
+                                            }
                                             render={props => (
                                                 <Contact
                                                     {...props}
@@ -245,16 +250,21 @@ export default class App extends React.Component {
                                                 render={props => (
                                                     <Home {...props} />
                                                 )}
-                                                style={{ position: "absolute" }}
                                             />
                                             <Route
-                                                path="/about"
+                                                path={
+                                                    process.env.PUBLIC_URL +
+                                                    "/about"
+                                                }
                                                 render={props => (
                                                     <About {...props} />
                                                 )}
                                             />
                                             <Route
-                                                path="/contact"
+                                                path={
+                                                    process.env.PUBLIC_URL +
+                                                    "/contact"
+                                                }
                                                 render={props => (
                                                     <Contact
                                                         {...props}
