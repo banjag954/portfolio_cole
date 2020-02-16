@@ -1,0 +1,63 @@
+/* .fade {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+}
+
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    background: transparent;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: all 400ms ease-in-out;
+        background-image: url(/public/logo192.png);
+    background-position: center;
+    background-size: 40px 40px;
+}
+
+.fade-exit {
+    opacity: 1;
+    background: transparent;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+} */
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+    display: block;
+}
+
+.fade-exit {
+    opacity: 1;
+    display: none;
+    background: transparent;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+    display: none;
+}
+
+/* 하위 구간 Loading test*/
+
+.testIn {
+    opacity: 0;
+}
+.testIn.visible {
+    transition: opacity 1s ease-in;
+    opacity: 1;
+}
