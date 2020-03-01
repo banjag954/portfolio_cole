@@ -43,14 +43,14 @@ const ContactWrap = styled.section`
             display: inline-block;
             width: 12.5vw;
             height: 100vh;
-            border-right: 1px solid #eee;
+            border-right: 1px solid #fafafa;
         }
         .horizon {
             position: absolute;
             display: inline-block;
             width: 100vw;
             height: 50vh;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #fafafa;
             float: right;
         }
     }

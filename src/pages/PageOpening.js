@@ -250,15 +250,16 @@ const IntroBackground = styled.section`
     animation: openBackground 5.6s ease;
     @keyframes openBackground {
         from {
-            transform: translateZ(0px);
+            transform: perspective(0px) translateZ(0px);
         }
         to {
-            transform: perspective(240px) translateZ(-8px);
+            transform: perspective(648px) translateZ(-8.8px);
         }
     }
 
-    @media screen and (max-width: 1024px) {
-        background-size: 120vw;
+    @media screen and (max-width: 560px) {
+        background-image: none;
+        animation: none;
     }
 `;
 

@@ -108,11 +108,7 @@ class Home extends React.Component {
                             <br />
                             Now...
                         </span>
-                        <canvas
-                            id="Canvas"
-                            className="Canvas"
-                            ref="Canvas"
-                        ></canvas>
+                        <canvas id="Canvas" className="Canvas" ref="Canvas" />
 
                         <div className="HomeBackground" />
                     </HomeWrapper>

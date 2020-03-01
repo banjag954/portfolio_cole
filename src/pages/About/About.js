@@ -19,16 +19,6 @@ const AboutWrap = styled.section`
     overflow-x: hidden;
 `;
 
-// const AboutBackground = styled.section`
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100vw;
-//     height: 100vh;
-//     user-select: none;
-//     z-index: -1;
-// `;
-
 const IntroText = styled.div`
     position: absolute;
     top: 88%;
@@ -102,9 +92,9 @@ export default class About extends React.Component {
         return (
             <>
                 <PageOpening
-                    textTitle={"Let me Introduce..."}
-                    titleDeco={"🥵"}
-                    textDesc={"Am I happen to shivering now...? :("}
+                    textTitle={"Let me Introduce"}
+                    titleDeco={"😀"}
+                    textDesc={"Hi, My Name is Cole Kim"}
                 />
                 <Div100vh>
                     <AboutWrap
