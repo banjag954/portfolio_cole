@@ -27,7 +27,6 @@ https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
 
 https://dev.to/caffiendkitten/react-router-with-github-pages-en3
 
-### Gh-page reload 시, 404 page 등장 (배포 문제)
+### Gh-page reload 시, 404 page 등장 (배포 문제 다른 라이브러리로 해결?)
 
 https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
-(참조)
