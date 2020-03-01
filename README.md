@@ -27,6 +27,11 @@ https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
 
 https://dev.to/caffiendkitten/react-router-with-github-pages-en3
 
-### Gh-page reload 시, 404 page 등장 (배포 문제 다른 라이브러리로 해결?)
+### Gh-page reload 시, 404 page 등장 (배포 문제 다른 라이브러리로 해결? => Netlife로 해결 완료)
 
 https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
+
+### Netlify로 CRA 배포 시, 주의사항!
+
+public/\_redirects 만들고,
+/\* /index.html 200 기입하거나, \_redirects 커스텀 세팅 해줘야하 정상 작동함!

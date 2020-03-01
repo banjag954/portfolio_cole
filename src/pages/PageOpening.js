@@ -239,25 +239,25 @@ const IntroBackground = styled.section`
     left: 0;
     z-index: -5;
     background-image: url("https://banjag954.github.io/portfolio_cole/openingBg.jpg");
-    background-size: 80vw;
+    background-size: 100vw;
     background-repeat: repeat;
     background-position: center;
     width: 100vw;
     height: 100%;
     background-color: #fff;
+    transform: translateZ(0px);
 
-    animation: openBackground 5.6s ease-in-out;
+    animation: openBackground 5.6s ease;
     @keyframes openBackground {
         from {
-            background-size: 88vw;
+            transform: translateZ(0px);
         }
         to {
-            background-size: 80vw;
+            transform: perspective(240px) translateZ(-8px);
         }
     }
 
     @media screen and (max-width: 1024px) {
-        animation: none;
         background-size: 120vw;
     }
 `;

@@ -206,7 +206,8 @@ const TypoWrap = styled.div`
     }
 
     .O {
-        width: 100%;
+        width: 96%;
+        height: 96%;
         animation: heartBeat 3.2s ease infinite;
         @keyframes heartBeat {
             0% {
