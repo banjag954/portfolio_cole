@@ -184,8 +184,8 @@ const OpeningBG = styled.section`
         }
 
         .open_06 {
-            transform: translate(8px, 72px);
-            width: 128px;
+            transform: translate(56px, 72px);
+            width: 88px;
             z-index: 1;
             animation: open06 1.6s ease-out;
             @keyframes open06 {
@@ -195,26 +195,26 @@ const OpeningBG = styled.section`
                 }
 
                 to {
-                    transform: translate(8px, 72px) rotate(0deg);
+                    transform: translate(56px, 72px) rotate(0deg);
                     opacity: 1;
                 }
             }
         }
 
         .open_07 {
-            transform: translate(-24px, 48px);
-            width: 120px;
+            transform: translate(40px, 56px);
+            width: 72px;
             animation: open07 2.4s ease-out;
             @keyframes open07 {
                 from {
                     opacity: 0;
                 }
                 72% {
-                    transform: translate(-8px, 48px);
+                    transform: translate(32px, 48px);
                     opacity: 0;
                 }
                 to {
-                    transform: translate(-24px, 48px);
+                    transform: translate(40px, 56px);
                     opacity: 1;
                 }
             }

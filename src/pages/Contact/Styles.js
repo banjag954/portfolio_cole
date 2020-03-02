@@ -114,6 +114,7 @@ const ContactWrap = styled.section`
                 display: block;
                 margin-bottom: 4px;
             }
+
             .btnIcon {
                 display: inline-block;
                 margin-right: 16px;

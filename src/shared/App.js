@@ -165,7 +165,12 @@ export default class App extends React.Component {
                                             exact
                                             path={process.env.PUBLIC_URL + "/"}
                                             render={props => (
-                                                <Home {...props} />
+                                                <Home
+                                                    {...props}
+                                                    handleMouseOver={
+                                                        this.handleMouseOver
+                                                    }
+                                                />
                                             )}
                                         />
                                         <Route
@@ -248,7 +253,12 @@ export default class App extends React.Component {
                                                     process.env.PUBLIC_URL + "/"
                                                 }
                                                 render={props => (
-                                                    <Home {...props} />
+                                                    <Home
+                                                        {...props}
+                                                        handleMouseOver={
+                                                            this.handleMouseOver
+                                                        }
+                                                    />
                                                 )}
                                             />
                                             <Route
