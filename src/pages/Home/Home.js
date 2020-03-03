@@ -133,15 +133,13 @@ class Home extends React.Component {
 
                                 <img
                                     className="CD_outLine"
-                                    src="https://banjag954.github.io/portfolio_cole/cd_outline@3x.png"
-                                    // src="cd_outline@3x.png"
+                                    src="https://raw.githubusercontent.com/banjag954/portfolio_cole/master/build/cd_outline%403x.png"
                                     alt=""
                                     onMouseOver={this.props.handleMouseOver}
                                 />
                                 <img
                                     className="CD_main"
-                                    src="https://banjag954.github.io/portfolio_cole/cd@3x.png"
-                                    // src="cd@3x.png"
+                                    src="https://raw.githubusercontent.com/banjag954/portfolio_cole/master/build/cd%403x.png"
                                     alt=""
                                     onMouseOver={this.props.handleMouseOver}
                                 />
