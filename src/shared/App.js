@@ -61,6 +61,15 @@ const CursorWrap = styled.section`
     }
 `;
 
+console.log(
+    "%cHello, thank you for visiting my website",
+    "background-color:#fff; color:#82ccdd; font-size:14px; height: 32px; line-height: 32px; padding: 0 8px;"
+);
+console.log(
+    "%cJunsu Kim, banjag954@naver.com",
+    "background-color:#60a3bc; color:#ffffff; font-size:16px; height: 40px; line-height: 40px; padding: 0 8px;"
+);
+
 export default class App extends React.Component {
     constructor(props) {
         super(props);

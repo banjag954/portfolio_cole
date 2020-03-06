@@ -147,7 +147,8 @@ class Home extends React.Component {
 
                             <div className="TimeLine">
                                 {/* Music:  */}
-                                Content Preparing
+                                Origamibiro - Quad Time and the Genius of the
+                                Crowd
                             </div>
                             <div className="Line" />
                             <div className="Project_Title">
@@ -208,6 +209,15 @@ class Home extends React.Component {
                                         </g>
                                     </svg>
                                 </a>
+
+                                <audio
+                                    autoPlay
+                                    loop
+                                    src="https://raw.githubusercontent.com/banjag954/portfolio_cole/master/build/Origamibiro.mp3"
+                                >
+                                    Your browser does not support the
+                                    <code>audio</code> element.
+                                </audio>
                             </section>
 
                             <HomeDeco>
@@ -307,7 +317,7 @@ class Home extends React.Component {
                                         cy="276"
                                         r="20"
                                         fill="#82CCDD"
-                                        fill-rule="evenodd"
+                                        fillRule="evenodd"
                                         transform="translate(-1000 -256)"
                                     />
                                 </svg>
@@ -430,7 +440,7 @@ class Home extends React.Component {
                                         cy="276"
                                         r="20"
                                         fill="#82CCDD"
-                                        fill-rule="evenodd"
+                                        fillRule="evenodd"
                                         transform="translate(-1000 -256)"
                                     />
                                 </svg>
