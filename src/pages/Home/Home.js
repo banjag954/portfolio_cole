@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeWrapper, HomeDeco, MainContent } from "./Styles";
+import { HomeWrapper, HomeDeco, MainContent, PlayBtn } from "./Styles";
 import Div100vh from "react-div-100vh";
 
 import PageOpening from "../PageOpening";
@@ -9,7 +9,8 @@ class Home extends React.Component {
         super(props);
 
         this.state = {
-            didMount: false
+            didMount: false,
+            play: false
         };
     }
 
@@ -85,9 +86,32 @@ class Home extends React.Component {
                 pageOpen: true
             });
         }, 4000);
+
+        //////// Audio
     }
 
+    // componentWillUnmount(audio) {
+    //     audio.removeEventListener("ended", () =>
+    //         this.setState({ play: false })
+    //     );
+    // }
+
+    audio = new Audio(
+        "https://raw.githubusercontent.com/banjag954/portfolio_cole/master/build/Origamibiro.mp3"
+    );
+
+    togglePlay = () => {
+        console.log("aa");
+        this.setState({ play: !this.state.play }, () => {
+            this.state.play ? this.audio.play() : this.audio.pause();
+        });
+    };
+
     render() {
+        this.audio.addEventListener("ended", () =>
+            this.setState({ play: false })
+        );
+
         return (
             <>
                 <PageOpening
@@ -141,6 +165,14 @@ class Home extends React.Component {
                                     className="CD_main"
                                     src="https://raw.githubusercontent.com/banjag954/portfolio_cole/master/build/cd%403x.png"
                                     alt=""
+                                    style={
+                                        this.state.play === true
+                                            ? {
+                                                  animation:
+                                                      "rotate 9.6s linear infinite"
+                                              }
+                                            : { animation: "none" }
+                                    }
                                     onMouseOver={this.props.handleMouseOver}
                                 />
                             </div>
@@ -183,6 +215,33 @@ class Home extends React.Component {
                                     </svg>
                                 </a>
 
+                                <PlayBtn
+                                    onMouseOver={this.props.handleMouseOver}
+                                    onClick={this.togglePlay.bind(this)}
+                                >
+                                    {this.state.play === true ? (
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M16,21c3.527-1.547,5.999-4.909,5.999-9S19.527,4.547,16,3v2c2.387,1.386,3.999,4.047,3.999,7S18.387,17.614,16,19V21z" />
+                                            <path d="M16 7v10c1.225-1.1 2-3.229 2-5S17.225 8.1 16 7zM4 17h2.697l5.748 3.832C12.612 20.943 12.806 21 13 21c.162 0 .324-.039.472-.118C13.797 20.708 14 20.369 14 20V4c0-.369-.203-.708-.528-.882-.324-.175-.72-.154-1.026.05L6.697 7H4C2.897 7 2 7.897 2 9v6C2 16.103 2.897 17 4 17zM4 9h3c.033 0 .061-.016.093-.019.064-.006.125-.02.188-.038.068-.021.131-.045.192-.078.026-.015.057-.017.082-.033L12 5.868v12.264l-4.445-2.964c-.025-.017-.056-.02-.082-.033-.061-.033-.123-.058-.19-.078-.064-.019-.126-.032-.192-.038C7.059 15.016 7.032 15 7 15H4V9z" />
+                                        </svg>
+                                    ) : (
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M21.707 20.293l-2.023-2.023c1.44-1.686 2.315-3.846 2.315-6.27 0-4.091-2.472-7.453-5.999-9v2c2.387 1.386 3.999 4.047 3.999 7 0 1.832-.629 3.543-1.672 4.913l-1.285-1.285C17.644 14.536 18 13.19 18 12c0-1.771-.775-3.9-2-5v7.586l-2-2V4c0-.369-.203-.708-.528-.882-.324-.174-.72-.154-1.026.05L7.727 6.313l-4.02-4.02L2.293 3.707l18 18L21.707 20.293zM12 5.868v4.718L9.169 7.755 12 5.868zM4 17h2.697l5.748 3.832C12.612 20.943 12.806 21 13 21c.162 0 .324-.039.472-.118C13.797 20.708 14 20.369 14 20v-1.879l-2-2v2.011l-4.445-2.964c-.025-.017-.056-.02-.082-.033-.061-.033-.123-.058-.19-.078-.064-.019-.126-.032-.192-.038C7.059 15.016 7.032 15 7 15H4V9h.879L3.102 7.223C2.451 7.554 2 8.222 2 9v6C2 16.103 2.897 17 4 17z" />
+                                        </svg>
+                                    )}
+                                </PlayBtn>
+
+                                {/* //////////////////////////////////// */}
                                 <a
                                     className="btnIcon"
                                     href="https://github.com/banjag954"
@@ -209,15 +268,6 @@ class Home extends React.Component {
                                         </g>
                                     </svg>
                                 </a>
-
-                                <audio
-                                    autoPlay
-                                    loop
-                                    src="https://raw.githubusercontent.com/banjag954/portfolio_cole/master/build/Origamibiro.mp3"
-                                >
-                                    Your browser does not support the
-                                    <code>audio</code> element.
-                                </audio>
                             </section>
 
                             <HomeDeco>
@@ -245,6 +295,14 @@ class Home extends React.Component {
                                     width="64"
                                     height="64"
                                     viewBox="0 0 64 64"
+                                    style={
+                                        this.state.play === true
+                                            ? {
+                                                  animation:
+                                                      "rotate2 9.6s linear infinite"
+                                              }
+                                            : { animation: "none" }
+                                    }
                                 >
                                     <defs>
                                         <path
@@ -298,6 +356,14 @@ class Home extends React.Component {
                                     width="92"
                                     height="38"
                                     viewBox="0 0 92 38"
+                                    style={
+                                        this.state.play === true
+                                            ? {
+                                                  animation:
+                                                      "fadeInOut 3.2s ease infinite"
+                                              }
+                                            : { animation: "none" }
+                                    }
                                 >
                                     <path
                                         fill="#121E25"
@@ -311,12 +377,19 @@ class Home extends React.Component {
                                     width="40"
                                     height="40"
                                     viewBox="0 0 40 40"
+                                    style={
+                                        this.state.play === true
+                                            ? {
+                                                  animation:
+                                                      "color 6.4s ease infinite"
+                                              }
+                                            : { animation: "none" }
+                                    }
                                 >
                                     <circle
                                         cx="1020"
                                         cy="276"
                                         r="20"
-                                        fill="#82CCDD"
                                         fillRule="evenodd"
                                         transform="translate(-1000 -256)"
                                     />
@@ -421,6 +494,14 @@ class Home extends React.Component {
                                     width="92"
                                     height="38"
                                     viewBox="0 0 92 38"
+                                    style={
+                                        this.state.play === true
+                                            ? {
+                                                  animation:
+                                                      "fadeInOut2 3.2s ease 1.6s infinite"
+                                              }
+                                            : { animation: "none" }
+                                    }
                                 >
                                     <path
                                         fill="#121E25"
@@ -434,12 +515,19 @@ class Home extends React.Component {
                                     width="40"
                                     height="40"
                                     viewBox="0 0 40 40"
+                                    style={
+                                        this.state.play === true
+                                            ? {
+                                                  animation:
+                                                      "color2 6.4s ease 3.2s infinite"
+                                              }
+                                            : { animation: "none" }
+                                    }
                                 >
                                     <circle
                                         cx="1020"
                                         cy="276"
                                         r="20"
-                                        fill="#82CCDD"
                                         fillRule="evenodd"
                                         transform="translate(-1000 -256)"
                                     />
@@ -454,6 +542,29 @@ class Home extends React.Component {
                         </div>
 
                         <canvas id="Canvas" className="Canvas" ref="Canvas" />
+
+                        {/* <div
+                            style={{
+                                padding: "56.25% 0 0 0",
+                                position: "relative",
+                                zIndex: -6
+                            }}
+                        >
+                            <iframe
+                                src="https://player.vimeo.com/video/147920248?autoplay=1&title=0&byline=0&portrait=0"
+                                style={{
+                                    position: "absolute",
+                                    top: 0,
+                                    left: 0,
+                                    width: "100%",
+                                    height: "100%"
+                                }}
+                                frameborder="0"
+                                allow="autoplay; fullscreen"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js"></script> */}
                     </HomeWrapper>
                 </Div100vh>
             </>

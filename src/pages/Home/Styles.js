@@ -32,11 +32,11 @@ const HomeWrapper = styled.div`
 
         .vertical {
             display: inline-block;
-            width: 33.3%;
+            width: 33.33333%;
             height: 100%;
             box-sizing: border-box;
-            background: rgba(255, 255, 255, 0.8);
-            border-right: 1px solid #eee;
+            background: rgba(255, 255, 255, 0.88);
+            border-right: 1px solid rgba(240, 240, 240, 0.64);
         }
     }
 
@@ -64,12 +64,35 @@ const HomeDeco = styled.section`
         position: absolute;
         top: -72px;
         left: -80px;
+        width: -64px;
+        @keyframes rotate2 {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
     }
 
     .main_03 {
         position: absolute;
         top: -64px;
         right: -56px;
+        opacity: 1;
+        @keyframes fadeInOut {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
 
     .main_04 {
@@ -77,6 +100,18 @@ const HomeDeco = styled.section`
         top: -48px;
         right: -72px;
         z-index: -1;
+        fill: #82ccdd;
+        @keyframes color {
+            0% {
+                fill: #82ccdd;
+            }
+            50% {
+                fill: #736aa1;
+            }
+            100% {
+                fill: #82ccdd;
+            }
+        }
     }
 
     .main_05 {
@@ -89,6 +124,18 @@ const HomeDeco = styled.section`
         position: absolute;
         bottom: 96px;
         left: -88px;
+        opacity: 1;
+        @keyframes fadeInOut2 {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
 
     .main_07 {
@@ -96,6 +143,18 @@ const HomeDeco = styled.section`
         bottom: 112px;
         left: -104px;
         z-index: -1;
+        fill: #82ccdd;
+        @keyframes color2 {
+            0% {
+                fill: #82ccdd;
+            }
+            50% {
+                fill: #f5bd7b;
+            }
+            100% {
+                fill: #82ccdd;
+            }
+        }
     }
 
     @media screen and (max-width: 700px) {
@@ -138,7 +197,6 @@ const MainContent = styled.section`
             margin: 16px;
             width: 304px;
 
-            animation: rotate 9.6s linear infinite;
             @keyframes rotate {
                 0% {
                     transform: rotate(0);
@@ -171,7 +229,7 @@ const MainContent = styled.section`
         margin-top: 32px;
 
         font-family: "Lobster", cursive;
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
         color: #4b4b4b;
         @media screen and (max-width: 560px) {
@@ -192,8 +250,6 @@ const MainContent = styled.section`
 
     .Project_Title {
         margin-top: 16px;
-        // font-family: "Fredoka One", cursive;
-
         font-family: "Gothic A1", sans-serif;
         font-weight: 700;
         font-size: 16px;
@@ -207,7 +263,7 @@ const MainContent = styled.section`
 
     .Project_Btn {
         margin: auto;
-        width: 128px;
+        width: 216px;
 
         .btnIcon {
             display: inline-block;
@@ -221,7 +277,7 @@ const MainContent = styled.section`
             transition: all 0.32s ease;
             cursor: none;
 
-            &:nth-child(2) {
+            &:nth-child(3) {
                 margin-right: 0;
             }
 
@@ -238,4 +294,30 @@ const MainContent = styled.section`
     }
 `;
 
-export { HomeWrapper, HomeDeco, MainContent };
+const PlayBtn = styled.div`
+    display: inline-block;
+    margin-right: 16px;
+    margin-top: 16px;
+    width: 56px;
+    height: 56px;
+    background: #40474e;
+    fill: #fafafa;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    transition: all 0.32s ease;
+    cursor: none;
+
+    &:hover,
+    &:active {
+        background: #2d3236;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16);
+    }
+
+    svg {
+        padding: 12px;
+        width: 32px;
+        height: 32px;
+    }
+`;
+
+export { HomeWrapper, HomeDeco, MainContent, PlayBtn };

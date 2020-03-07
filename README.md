@@ -35,3 +35,7 @@ https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
 
 public/\_redirects 만들고,
 /\* /index.html 200 기입하거나, \_redirects 커스텀 세팅 해줘야하 정상 작동함!
+
+### Player 관련 레퍼런스
+
+https://stackoverflow.com/questions/47686345/playing-sound-in-reactjs
