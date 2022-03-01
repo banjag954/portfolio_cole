@@ -1,48 +1,58 @@
 {
-    "name": "portfolio_cole",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@babel/runtime": "^7.8.4",
-        "@testing-library/jest-dom": "^4.2.4",
-        "@testing-library/react": "^9.3.2",
-        "@testing-library/user-event": "^7.1.2",
-        "acorn": "^7.1.1",
-        "cross-env": "^7.0.0",
-        "minimist": "^1.2.5",
-        "object-path": "^0.11.5",
-        "react": "^16.12.0",
-        "react-device-detect": "^1.11.14",
-        "react-div-100vh": "^0.3.8",
-        "react-dom": "^16.12.0",
-        "react-router-dom": "^5.1.2",
-        "react-scripts": "3.3.0",
-        "react-spring": "^8.0.27",
-        "react-transition-group": "^4.3.0",
-        "serialize-javascript": "^2.1.2",
-        "styled-components": "^4.4.1"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "cross-env NODE_PATH=src react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject",
-        "deploy": "gh-pages -d build",
-        "predeploy": "npm run build"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    }
+  "name": "portfolio_cole",
+  "version": "1.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-transition-group": "^4.4.4",
+    "@types/styled-components": "^5.1.23",
+    "acorn": "^7.1.1",
+    "cross-env": "^7.0.0",
+    "minimist": "^1.2.5",
+    "object-path": "^0.11.5",
+    "react": "^16.12.0",
+    "react-device-detect": "^1.11.14",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^3.4.0",
+    "react-spring": "^8.0.27",
+    "react-transition-group": "^4.3.0",
+    "serialize-javascript": "^2.1.2",
+    "styled-components": "^4.4.1",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-error-overlay": "6.0.9"
+  }
 }
