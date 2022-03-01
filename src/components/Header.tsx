@@ -92,9 +92,7 @@ type Props = {
 export default function Header({ cursorMouseOver }: Props) {
   // 콜립스 안에 있는 6글자를 순서대로 오파시티 넣어 보이게 하고싶음.
   const handleMouseOut = () => {
-    let logoNames: any = document
-      .getElementById("collapse")
-      ?.getElementsByTagName("i");
+    let logoNames: any = document.getElementsByTagName("i");
 
     for (let i = 0; i < 7; i++) {
       setTimeout(() => {
@@ -104,20 +102,13 @@ export default function Header({ cursorMouseOver }: Props) {
   };
 
   const handleMouseOver = () => {
-    let logoNames: any = document
-      .getElementById("collapse")
-      ?.getElementsByTagName("i");
+    let logoNames: any = document.getElementsByTagName("i");
 
     for (let i = 0; i < 7; i++) {
       setTimeout(() => {
         logoNames[i].style.opacity = 1;
       }, 40 * i);
     }
-  };
-
-  const onMouseOver = () => {
-    handleMouseOver();
-    cursorMouseOver?.();
   };
 
   return (
@@ -128,8 +119,9 @@ export default function Header({ cursorMouseOver }: Props) {
         ) : (
           <HeaderName
             className="HeaderName__Logo"
-            onMouseOver={onMouseOver}
+            onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
+            onMouseMove={cursorMouseOver}
           >
             J
             <span id="collapse">
