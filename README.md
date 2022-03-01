@@ -8,8 +8,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `yarn start`
 
-### `npm run deploy`
-
 gh-page 배포시, 터미널에 기입
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
