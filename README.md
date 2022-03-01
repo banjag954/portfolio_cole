@@ -6,9 +6,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### `yarn start`
+#### `yarn start`
 
-gh-page 배포시, 터미널에 기입
+gh-page 배포시, 터미널에 기입 (netlify가 yarn을 못찾음)
+
+#### `npm run build`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
