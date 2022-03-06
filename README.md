@@ -8,11 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 #### `yarn start`
 
-gh-page 배포시, 터미널에 기입 (netlify가 yarn을 못찾음)
+#### `yarn run build`
 
-#### `npm run build`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+gh-page 배포시, 터미널에 기입 (netlify가 yarn을 못찾음 > 해당 부분 해결 걍 yarn run build해도 문제 없음.)
 
 ### 계정 연동과 연관된 'Git Set URL'
 

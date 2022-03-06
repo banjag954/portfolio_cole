@@ -34,22 +34,15 @@ const AboutATypo = styled.div`
   opacity: 1;
   z-index: 1;
 
-  // animation: TypoAni 3.2s ease-in-out;
+  animation: TypoAni 3.6s ease-in-out;
   animation-fill-mode: forwards;
 
   @keyframes TypoAni {
     from {
       opacity: 0;
     }
-    50%{
+    to {
       opacity: 1;
-    }
-    95% {
-      opacity: 0;
-    }
-    to{
-      opacity: 0;
-      display: none; !important;
     }
   }
 
