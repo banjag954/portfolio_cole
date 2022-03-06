@@ -34,7 +34,7 @@ const AboutATypo = styled.div`
   opacity: 1;
   z-index: 1;
 
-  animation: TypoAni 2.4s ease-in;
+  animation: TypoAni 2s ease-in;
   animation-fill-mode: forwards;
 
   @keyframes TypoAni {
