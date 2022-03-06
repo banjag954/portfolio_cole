@@ -32,7 +32,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env NODE_PATH=src react-scripts build",
+    "build": "cross-env NODE_PATH=src CI= react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
