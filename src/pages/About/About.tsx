@@ -59,9 +59,9 @@ function About(props: Props) {
   return (
     <>
       <PageOpening
-        title={"Let me Introduce"}
+        title={"Hi, there"}
         emoji={"😀"}
-        desc={"Hi, My Name is Cole Kim"}
+        desc={"Hello, My Name is Cole Kim"}
       />
 
       <IntroAbout />

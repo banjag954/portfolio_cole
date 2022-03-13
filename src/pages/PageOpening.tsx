@@ -22,7 +22,7 @@ const OpeningBG = styled.section`
 
   .BG__TextWrap {
     position: absolute;
-    top: 52%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -38,17 +38,16 @@ const OpeningBG = styled.section`
     .Text__Title {
       display: block;
       font-family: "Lobster", cursive;
-      font-size: 40px;
-      color: #4b4b4b;
+      font-size: 36px;
+      color: #2b2b2b;
       margin-bottom: 16px;
       animation: TextAni 0.8s ease-in;
     }
     .Text__Desc {
       display: block;
       font-family: "Gothic A1", cursive;
-      font-size: 24px;
-      line-height: 32px;
-      color: #4b4b4b;
+      font-size: 20px;
+      color: #6b6b6b;
       animation: TextAni 2.4s ease-in;
     }
   }
