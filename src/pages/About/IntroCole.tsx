@@ -452,11 +452,11 @@ function IntroCole(props: Props) {
         </AboutLine>
         <AboutLine>
           <LineNumber>72</LineNumber> ····[ <b>Developement skills</b> :{" "}
-          <String>'HTML, CSS, SASS, Javascript</String>
+          <String>'HTML, CSS, SASS, JavaScript</String>
         </AboutLine>
         <AboutLine>
           <LineNumber>73</LineNumber> ····
-          <String>React, Styled-components, Git, Node, AWS'</String> ],
+          <String>React, TypeScript, Git, Node, AWS'</String> ],
         </AboutLine>
 
         <AboutLine>

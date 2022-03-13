@@ -31,7 +31,7 @@ const IntroText = styled.div`
   transform: ${(props: Props) =>
     props.actived
       ? "perspective(1800px) translate3d(44%, 120%, -120px) rotateZ(90deg)"
-      : "perspective(1800px) translate3d(44%, 400%, -120px) rotateZ(90deg)"};
+      : "perspective(1800px) translate3d(44%, 160%, -120px) rotateZ(90deg)"};
   opacity: 1;
   z-index: 1;
 
