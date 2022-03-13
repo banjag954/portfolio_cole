@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import IntroCole from "./IntroCole";
 import IntroAbout from "./IntroAbout";
 import PageOpening from "../PageOpening";
 import Background from "../../components/Background";
+
+type Props = {
+  cursorMouseOver?: () => void;
+  actived?: boolean;
+};
 
 const AboutWrap = styled.section`
   position: fixed;
@@ -23,11 +28,14 @@ const IntroText = styled.div`
   position: absolute;
   top: 16vw;
   right: -24%;
-  transform: perspective(1800px) translate3d(44%, 120%, -120px) rotateZ(90deg);
+  transform: ${(props: Props) =>
+    props.actived
+      ? "perspective(1800px) translate3d(44%, 120%, -120px) rotateZ(90deg)"
+      : "perspective(1800px) translate3d(44%, 400%, -120px) rotateZ(90deg)"};
   opacity: 1;
   z-index: 1;
 
-  transition: all 1.6s ease;
+  transition: transform 1.2s ease-out;
   span {
     display: block;
     font-size: 64vw;
@@ -51,24 +59,26 @@ const IntroText = styled.div`
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-type Props = {
-  cursorMouseOver?: () => void;
-};
-
 function About(props: Props) {
+  const [intro, setIntro] = useState(false);
+
+  const handleIntro = () => {
+    setIntro(!intro);
+  };
+
   return (
     <>
       <PageOpening
         title={"Hi, there"}
         emoji={"😀"}
-        desc={"Hello, My Name is Cole Kim"}
+        desc={"Hello, My Name is Junsu Kim"}
       />
 
-      <IntroAbout />
+      <IntroAbout introClick={handleIntro} />
 
       <AboutWrap>
         <IntroCole />
-        <IntroText>
+        <IntroText actived={intro}>
           <span>UI&UX Product</span>
           <span>Designer.</span>
         </IntroText>

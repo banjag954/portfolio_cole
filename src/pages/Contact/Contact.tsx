@@ -50,9 +50,9 @@ const ContactWrap = styled.section`
 
     .Intro__Channel {
       margin: 16px 0 24px;
-      padding: 0 8px;
+      padding: 0 24px;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-around;
     }
 
     .Intro__Others {
@@ -164,7 +164,6 @@ const BottomCircle = styled.div`
 `;
 
 const ChannelIcon = styled.a`
-  margin-right: 16px;
   display: inline-flex;
   justify-content: center;
   align-items: center;

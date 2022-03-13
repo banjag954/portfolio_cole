@@ -8,6 +8,7 @@ const AboutWrap = styled.section`
   left: 0;
   width: 100%;
   height: calc(var(--vh, 1vh) * 100);
+  background: #fff;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -352,16 +353,16 @@ const AboutInfoWrap = styled.div`
     padding: 12px;
     width: 200px;
     font-family: "Gothic A1", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 500;
     color: #8b8b8b;
-    background: rgba(0, 0, 0, 0.04);
+    background: rgba(0, 0, 0, 0.02);
     border-radius: 32px;
   }
 `;
 
 type Props = {
-  pageControl?: boolean;
+  introClick: () => void;
 };
 
 export default function IntroAbout(props: Props) {
@@ -371,13 +372,14 @@ export default function IntroAbout(props: Props) {
   useEffect(() => {
     setTimeout(() => {
       setAppeaerTypo("block");
-    }, 4000);
+    }, 3600);
   }, []);
 
   return (
     <AboutWrap
       onClick={() => {
         setPageControl(!true);
+        props.introClick();
       }}
       className={pageControl ? "Open" : "Close"}
     >
