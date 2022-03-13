@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Background from "../components/Background";
 
 const OpeningBG = styled.section`
   position: fixed;
@@ -225,15 +226,15 @@ const IntroBackground = styled.section`
   width: 100vw;
   height: 100%;
   background-color: #fff;
-  transform: translateZ(0px);
+  transform: scale(1.2);
 
-  animation: openBackground 5.6s ease;
+  animation: openBackground 5.6s linear;
   @keyframes openBackground {
     from {
-      transform: perspective(0px) translateZ(0px);
+      transform: scale(1);
     }
     to {
-      transform: perspective(0px) translateZ(0.16px);
+      transform: scale(1.2);
     }
   }
 
@@ -288,6 +289,7 @@ export default function PageOpening(props: Props) {
         <img className="topLeft open_07" src="/leftTopT.svg" alt="123" />
       </section>
       <IntroBackgroundOutline />
+      <Background />
       <IntroBackground />
     </OpeningBG>
   );

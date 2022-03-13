@@ -110,8 +110,8 @@ const TopCircle = styled.div`
     props.actived ? "scale(1)" : "scale(0)"};
 
   .TopCircle__Icon {
-    width: 8vw;
-    height: 8vw;
+    width: 96px;
+    object-fit: contain;
     animation: pulse 5.6s linear infinite;
     @keyframes pulse {
       from {
@@ -127,7 +127,7 @@ const TopCircle = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    top: 72px !important;
+    top: 88px !important;
     left: 16px !important;
   }
 `;
@@ -140,9 +140,9 @@ const BottomCircle = styled.div`
     props.actived ? "scale(1)" : "scale(0)"};
   transition: all 0.24s ease-in-out;
 
-  .TopCircle__Icon {
-    width: 8vw;
-    height: 8vw;
+  .BottomCircle__Icon {
+    width: 96px;
+    object-fit: contain;
     animation: pulse 4s ease infinite;
     @keyframes pulse {
       from {

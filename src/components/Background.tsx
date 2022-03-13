@@ -7,7 +7,7 @@ const BackgroundWrap = styled.main`
   left: 0;
   width: 100%;
   height: calc(var(--vh, 1vh) * 100);
-  background: #fff;
+  background: transparent;
   border: 8px solid rgba(0, 0, 0, 0.04);
   box-sizing: border-box;
   z-index: -2;
