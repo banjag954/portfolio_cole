@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Background from "../components/Background";
+import Background from "./Background";
 
 const OpeningBG = styled.section`
   position: fixed;

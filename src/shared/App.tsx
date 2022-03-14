@@ -69,7 +69,7 @@ console.log(
   "background-color:#60a3bc; color:#ffffff; font-size:16px; height: 40px; line-height: 40px; padding: 0 8px;"
 );
 
-export default function App() {
+function App() {
   const [xMain, setXMain] = useState(0);
   const [yMain, setYMain] = useState(0);
   const [xTrailing, setXTrailing] = useState(0);
@@ -212,3 +212,5 @@ export default function App() {
     );
   }
 }
+
+export default App;

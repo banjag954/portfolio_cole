@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { isMobile } from "react-device-detect";
 import Background from "../../components/Background";
-import PageOpening from "../PageOpening";
+import ChannelBtn from "../../components/ChannelBtn";
+import PageOpening from "../../components/PageOpening";
 import MyImg from "./ContactPhoto";
 
 type Props = {
@@ -163,24 +164,6 @@ const BottomCircle = styled.div`
   }
 `;
 
-const ChannelIcon = styled.a`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px;
-  background: #fafafa;
-  border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-  transition: all 0.24s ease;
-  cursor: none;
-  &:hover,
-  &:active {
-    background: #e4e4e4;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16);
-  }
-`;
-
 function Contact(props: Props) {
   const { cursorMouseOver } = props;
   const [bgDeco, setBgDeco] = useState(true);
@@ -219,18 +202,18 @@ function Contact(props: Props) {
           </div>
 
           <div className="Intro__Channel">
-            <ChannelIcon
+            <ChannelBtn
               href="https://www.behance.net/kimjunsoo"
               onMouseOver={cursorMouseOver}
             >
               <img src="behance.svg" alt="" />
-            </ChannelIcon>
-            <ChannelIcon
+            </ChannelBtn>
+            <ChannelBtn
               href="https://github.com/banjag954"
               onMouseOver={cursorMouseOver}
             >
               <img src="github.svg" alt="" />
-            </ChannelIcon>
+            </ChannelBtn>
           </div>
 
           <div className="Intro__Others" onMouseOver={cursorMouseOver}>

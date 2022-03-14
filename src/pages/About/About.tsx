@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import IntroCole from "./IntroCole";
 import IntroAbout from "./IntroAbout";
-import PageOpening from "../PageOpening";
+import PageOpening from "../../components/PageOpening";
 import Background from "../../components/Background";
 
 type Props = {

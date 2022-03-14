@@ -56,13 +56,13 @@ const HomeDeco = styled.section`
 
   .main_01 {
     position: absolute;
-    top: -88px;
+    top: -72px;
     left: -104px;
   }
 
   .main_02 {
     position: absolute;
-    top: -72px;
+    top: -56px;
     left: -80px;
     width: -64px;
     @keyframes rotate2 {
@@ -79,7 +79,7 @@ const HomeDeco = styled.section`
   .main_03 {
     position: absolute;
     top: -64px;
-    right: -56px;
+    right: -88px;
     opacity: 1;
     @keyframes fadeInOut {
       0% {
@@ -98,7 +98,7 @@ const HomeDeco = styled.section`
   .main_04 {
     position: absolute;
     top: -48px;
-    right: -72px;
+    right: -104px;
     z-index: -1;
     fill: #82ccdd;
     @keyframes color {
@@ -165,7 +165,7 @@ const HomeDeco = styled.section`
 
 const MainContent = styled.section`
   position: absolute;
-  top: 56%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
@@ -262,61 +262,31 @@ const MainContent = styled.section`
   }
 
   .Project_Btn {
-    margin: auto;
-    width: 216px;
-
-    .btnIcon {
-      display: inline-block;
-      margin-right: 16px;
-      margin-top: 16px;
-      width: 56px;
-      height: 56px;
-      background: #fafafa;
-      border-radius: 50%;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-      transition: all 0.32s ease;
-      cursor: none;
-
-      &:nth-child(3) {
-        margin-right: 0;
-      }
-
-      &:hover,
-      &:active {
-        background: #e4e4e4;
-        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16);
-      }
-
-      svg {
-        padding: 6px;
-      }
-    }
+    margin: 16px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 240px;
   }
 `;
 
 const PlayBtn = styled.div`
-  display: inline-block;
-  margin-right: 16px;
-  margin-top: 16px;
+  display: flex;
   width: 56px;
   height: 56px;
   background: #40474e;
   fill: #fafafa;
   border-radius: 50%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-  transition: all 0.32s ease;
+  transition: background-color 0.16s ease, box-shadow 0.16s ease;
   cursor: none;
-
-  &:hover,
-  &:active {
+  &:hover {
     background: #2d3236;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16);
   }
 
-  svg {
+  img {
     padding: 12px;
-    width: 32px;
-    height: 32px;
   }
 `;
 
