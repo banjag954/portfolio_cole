@@ -286,7 +286,7 @@ export default function PageOpening(props: Props) {
         <img className="open_04" src="leftBottom-circle.svg" alt="" />
         <img className="topLeft open_05" src="leftCenter-shape.svg" alt="" />
         <img className="topLeft open_06" src="leftTop-circle.svg" alt="" />
-        <img className="topLeft open_07" src="/leftTopT.svg" alt="123" />
+        <img className="topLeft open_07" src="leftTopT.svg" alt="123" />
       </section>
       <IntroBackgroundOutline />
       <Background />
