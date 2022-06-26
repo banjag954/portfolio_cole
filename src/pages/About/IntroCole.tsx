@@ -232,7 +232,7 @@ function IntroCole(props: Props) {
         </AboutLine>
         <AboutLine>
           <LineNumber>21</LineNumber> ····[ 2016.10 ~ Now /{" "}
-          <b>Head of Design</b> at <b>Archisketch.inc</b>
+          <b>Archisketch Product Director</b> at <b>Archisketch.inc</b>
         </AboutLine>
         <AboutLine>
           <LineNumber>22</LineNumber> ····
