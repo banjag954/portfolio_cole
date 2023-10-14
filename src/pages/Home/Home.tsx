@@ -49,6 +49,7 @@ const HomeWrapper = styled.div`
   }
 `;
 
+// eslint-disable-next-line no-mixed-operators
 const HomeDeco = styled.section<StyledProps>`
   display: block;
   visibility: visible;
@@ -235,7 +236,7 @@ function Home(props: Props) {
             href="https://www.behance.net/kimjunsoo"
             onMouseOver={props.cursorMouseOver}
           >
-            <img src="behance.svg" alt="" />
+            <img src="/behance.svg" alt="" />
           </ChannelBtn>
 
           {/* <audio
@@ -255,19 +256,19 @@ function Home(props: Props) {
             href="https://github.com/banjag954"
             onMouseOver={props.cursorMouseOver}
           >
-            <img src="github.svg" alt="" />
+            <img src="/github.svg" alt="" />
           </ChannelBtn>
         </section>
 
         <HomeDeco play={play}>
           <img
             className="Deco__Points Left"
-            src="deco-points.svg"
+            src="/deco-points.svg"
             alt="Deco__Points"
           />
           <img
             className="Deco__Points Right"
-            src="deco-points.svg"
+            src="/deco-points.svg"
             alt="Deco__Points"
           />
           <DecoCircle className="CircleLeft" play={play} />

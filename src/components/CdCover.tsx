@@ -126,8 +126,8 @@ export default function CdCover(props: Props) {
 
   return (
     <CoverWrap>
-      <img className="Cover__Deco-1" src="cdDeco.svg" alt="cdDeco" />
-      <img className="Cover__Deco-2" src="cdDeco.svg" alt="cdDeco" />
+      <img className="Cover__Deco-1" src="/cdDeco.svg" alt="cdDeco" />
+      <img className="Cover__Deco-2" src="/cdDeco.svg" alt="cdDeco" />
       <Case>
         <div className="Case__Title">
           Origamibiro - Quad Time and the Genius of the Crowd

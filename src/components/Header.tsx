@@ -138,6 +138,13 @@ export default function Header({ cursorMouseOver }: Props) {
       </NavLink>
 
       <div className="Header__Right">
+        <HeaderMenu
+          as="a"
+          href={"https://junsu.kim"}
+          onMouseOver={cursorMouseOver}
+        >
+          Blog
+        </HeaderMenu>
         <HeaderMenu to="/about" onMouseOver={cursorMouseOver}>
           About
         </HeaderMenu>

@@ -280,13 +280,17 @@ export default function PageOpening(props: Props) {
       </section>
 
       <section className="BG__DecoWrap">
-        <img className="topRight open_01" src="rightTop-circle.svg" alt="" />
-        <img className="topRight open_02" src="rightCenter-circle.svg" alt="" />
-        <img className="open_03" src="rightBottom-shape.svg" alt="" />
-        <img className="open_04" src="leftBottom-circle.svg" alt="" />
-        <img className="topLeft open_05" src="leftCenter-shape.svg" alt="" />
-        <img className="topLeft open_06" src="leftTop-circle.svg" alt="" />
-        <img className="topLeft open_07" src="leftTopT.svg" alt="123" />
+        <img className="topRight open_01" src="/rightTop-circle.svg" alt="" />
+        <img
+          className="topRight open_02"
+          src="/rightCenter-circle.svg"
+          alt=""
+        />
+        <img className="open_03" src="/rightBottom-shape.svg" alt="" />
+        <img className="open_04" src="/leftBottom-circle.svg" alt="" />
+        <img className="topLeft open_05" src="/leftCenter-shape.svg" alt="" />
+        <img className="topLeft open_06" src="/leftTop-circle.svg" alt="" />
+        <img className="topLeft open_07" src="/leftTopT.svg" alt="123" />
       </section>
       <IntroBackgroundOutline />
       <Background />
