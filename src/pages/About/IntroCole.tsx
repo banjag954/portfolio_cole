@@ -156,15 +156,14 @@ function IntroCole(props: Props) {
         </AboutLine>
 
         <AboutLine>
-          <LineNumber>3</LineNumber>{" "}
-          <Remark>
-            ∕∕ Usually, I’ am called <b>Cole Kim</b> outside of Korea.
-          </Remark>
+          <LineNumber>3</LineNumber> <Remark>∕∕ Hi, there 👋.</Remark>
         </AboutLine>
 
         <AboutLine>
           <LineNumber>4</LineNumber>{" "}
-          <Remark>∕∕ I'm ambitious and love new challenges.</Remark>
+          <Remark>
+            ∕∕ My name is <b>Junsu(Cole) Kim</b>.
+          </Remark>
         </AboutLine>
         <AboutLine>
           <LineNumber>5</LineNumber>{" "}
@@ -172,11 +171,15 @@ function IntroCole(props: Props) {
         </AboutLine>
         <AboutLine>
           <LineNumber>6</LineNumber>{" "}
-          <Remark>∕∕ I have started about learning code & development</Remark>
+          <Remark>
+            ∕∕ I love creating visual things using code and other tools.
+          </Remark>
         </AboutLine>
         <AboutLine>
           <LineNumber>7</LineNumber>{" "}
-          <Remark>∕∕ to make the product in a start-up.</Remark>
+          <Remark>
+            ∕∕ Currently, I'm designing a product at Archisketch team.
+          </Remark>
         </AboutLine>
 
         <AboutLine>
