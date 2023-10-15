@@ -111,12 +111,15 @@ const Remark = styled.span`
 
 const String = styled.span`
   color: #60a3bc;
-  font-weight: 700;
+  font-weight: 400;
 `;
 
 const Return = styled.span`
   color: #b71540;
   font-weight: 400;
+  b {
+    font-weight: 700;
+  }
 `;
 
 const AboutFinish = styled.span`
@@ -234,30 +237,37 @@ function IntroCole(props: Props) {
           <LineNumber>20</LineNumber> ··<Return>return</Return>(
         </AboutLine>
         <AboutLine>
-          <LineNumber>21</LineNumber> ····[ 2016.10 ~ Now /{" "}
-          <b>Archisketch Product Director</b> at <b>Archisketch.inc</b>
+          <LineNumber>21</LineNumber> ····[ 2016.10 ~ Now / <b>Working</b> at{" "}
+          <b>Archisketch.inc</b>
         </AboutLine>
         <AboutLine>
           <LineNumber>22</LineNumber> ····
-          <String>'Archisketch Service Designer / UI Developer'</String> ],
-        </AboutLine>
-        <AboutLine>
-          <LineNumber>23</LineNumber> ····[ 2016.07 ~ 2016.09 /{" "}
-          <b>Freelancer</b> at <b>Dot-mill.inc</b>
-        </AboutLine>
-        <AboutLine>
-          <LineNumber>24</LineNumber> ····
           <String>
-            'made <b>Comic Maple Story Hologram Musical</b>'
+            'Design & develop <b>Archisketch Products</b>'
           </String>
           ],
         </AboutLine>
         <AboutLine>
-          <LineNumber>25</LineNumber> ····[ 2011.01 ~ 2012.10 :
+          <LineNumber>23</LineNumber> ····[ 2016.07 ~ 2016.09 / <b>Wroked</b> at{" "}
+          <b>Dot-mill.inc</b>
+        </AboutLine>
+        <AboutLine>
+          <LineNumber>24</LineNumber> ····
+          <String>
+            'Made <b>Comic Maple Story Hologram Musical</b>'
+          </String>
+          ],
+        </AboutLine>
+        <AboutLine>
+          <LineNumber>25</LineNumber> ····[ 2011.01 ~ 2012.10 : <b>Served</b>{" "}
+          Artilleryman in <b>Republic of Korea Army</b>
         </AboutLine>
         <AboutLine>
           <LineNumber>26</LineNumber> ····
-          <String>'Artilleryman in Republic of Korea Army'</String> ]
+          <String>
+            'Gained <b>various experiences</b> and <b>patriotism</b>.'
+          </String>{" "}
+          ]
         </AboutLine>
         <AboutLine>
           <LineNumber>27</LineNumber>··)
